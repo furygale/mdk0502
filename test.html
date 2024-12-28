@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Ilya Minin">
+    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="stylesheet" href="source/css/test.css">
+    <title>Тест</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="header-left">
+                <p>Тренер картер </p>
+            </div>
+            <div class="header-right">
+                <a href="index.html">Описание</a>
+                <a href="Slovar.html">Словрь</a>
+                <a href="test.html" class="active">Тест</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="profile.html" id="username">Личный кабинет</a>
+                <div class="logout-section" id="logout-section">
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1 class="top-pagename">Тест</h1>
+        <section class="central-content">
+            <h2>Тест по Бэтмену</h2>
+
+            <form id="quizForm" name="quizForm" novalidate>
+                <fieldset>
+                    <label for="q1">1. Как зовут главного героя?</label>
+                    <input type="text" id="q1" name="q1">
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <label for="q2">2. Как зовут главного игрока?</label>
+                    <input type="text" id="q2" name="q2">
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Где происходят игры?</legend>
+                    <label><input type="radio" name="q3" value="Америка"> Америка</label>
+                    <label><input type="radio" name="q3" value="Россия"> Россия</label>
+                    <label><input type="radio" name="q3" value="Япония"> Япония</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>4. Сколько игроков в баскетболе ?</legend>
+                    <label><input type="radio" name="q4" value="12"> 12</label>
+                    <label><input type="radio" name="q4" value="10"> 10 </label>
+                    <label><input type="radio" name="q4" value="13"> 13</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>5. Сколько лет Картеру?</legend>
+                    <label><input type="radio" name="q5" value="76"> 76</label>
+                    <label><input type="radio" name="q5" value="52"> 52</label>
+                    <label><input type="radio" name="q5" value="66"> 66</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>6. Мяч в баскетболе?</legend>
+                    <label><input type="radio" name="q6" value="круглый"> круглый</label>
+                    <label><input type="radio" name="q6" value="Круглый-овал"> Круглый-овал</label>
+                    <label><input type="radio" name="q6" value="Ассиметричный"> Ассиметричный</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <div class="result-section">
+                    <span id="test-result"></span>
+                </div>
+
+                <button type="submit" id="submit-button">Ответить</button>
+            </form>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="socials-container">
+            <div class="contact-info">
+                               <p>&copy;  Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="source/js/script.js"></script>
+    <script src="source/js/test.js"></script>
+</body>
+
+</html>
